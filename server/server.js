@@ -35,5 +35,6 @@ app.delete('/api/todos/:id', async (req, res) => {
  if (result.rowCount === 0) return res.status(404).json({ error: 'Not found' });
  res.status(204).end();
 });
+
 const port = process.env.PORT || 3001;
 app.listen(port, () => console.log('API listening on port ' + port));
