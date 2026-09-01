@@ -9,7 +9,7 @@ permissions:
 env:
   AWS_REGION: us-east-1
   ECR_REPO: lab-test-hasanah-ecr
-  ROLE_ARN: arn:aws:iam::232881763218:user/tesa-lab-gha-role
+  ROLE_ARN: arn:aws:iam::232881763218:role/lab-test-hasanah-role-policy
 jobs:
   build:
     runs-on: ubuntu-latest
